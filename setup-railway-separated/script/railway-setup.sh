@@ -28,3 +28,5 @@ su frappe -c "bench use ${RFP_DOMAIN_NAME}"
 
 echo "-> Enable scheduler"
 bench enable-scheduler
+bench get-app https://github.com/earthians/marley.git || true
+bench --site frontend install-app healthcare --force || true
