@@ -173,3 +173,4 @@ RUN SITE_NAME="${SITE_NAME}" \
 EXPOSE 80
 
 CMD ["/usr/local/bin/start.sh"]
+RUN bench get-app https://github.com/earthians/marley.git
