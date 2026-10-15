@@ -172,4 +172,7 @@ RUN SITE_NAME="${SITE_NAME}" \
 
 EXPOSE 80
 
+RUN bench get-app https://github.com/earthians/marley.git
+RUN bench --site frontend install-app healthcare --force || true
+
 CMD ["/usr/local/bin/start.sh"]
